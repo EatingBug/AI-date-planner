@@ -7,21 +7,25 @@ import Box from "./Box";
 const BoxGroup = () => {
     const boxes = [
         {
+            id: 1,
             title: "데이트 코스 추천받기",
             image: "assets/images/aiRobot.png",
             link: "/chat",
         },
         {
+            id: 2,
             title: "유저 추천 코스",
             image: "assets/images/polaris.png",
             link: "/recommends",
         },
         {
+            id: 3,
             title: "테스트용 1234",
             image: "assets/images/polaris.png",
             link: "/",
         },
         {
+            id: 4,
             title: "테스트용 1234",
             image: "assets/images/polaris.png",
             link: "/",
@@ -31,7 +35,12 @@ const BoxGroup = () => {
     return (
         <div className="boxGroup">
             {boxes.map((box) => (
-                <Box title={box.title} image={box.image} link={box.link} />
+                <Box
+                    title={box.title}
+                    image={box.image}
+                    link={box.link}
+                    key={box.id}
+                />
             ))}
             <style jsx>{`
                 .boxGroup {

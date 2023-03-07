@@ -27,7 +27,7 @@ const TodayRecommends = ({ todayRecommends }) => {
 
             <style jsx>{`
                 .todayRecommends {
-                    width: 28%;
+                    width: 420px;
                     height: 180px;
                     left: 32px;
                     top: 222px;
